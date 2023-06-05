@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Bootstrap Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .jumbotron {
+            margin-top: 2rem;
+        }
+        
+        .company-name {
+            color: #007bff;
+        }
+        
+        .description {
+            color: #343a40;
+        }
+        
+        /* Footer Styles */
+
+.footer {
+    background-color: #000000;
+    color: #ffffff; /* Set the text color to white */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">IT Solution Provider</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/suranjithprasad">GitHub</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://suranjithprasad.github.io">Developer Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/@SuranjithPrasad/">YouTube</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/suranjith-prasad-44a128ba">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Welcome to <span class="company-name">EGO TECH</span></h1>
+            <p class="lead description">EGO TECH is a leading provider of web and software development solutions. we deliver high-quality products tailored to meet our clients' unique requirements. <b>We do WEB, Software, Moble, Python applications</b></p>
+        </div>
+        
+        <div class="row mx-auto"><div class="col-md-12 mx-auto">
+        <h4><b>Tell to us</b>- Website | Web application | Moblie application | Software </h4>
+        <br/>
+        </div></div>
+
+<div class="row mx-auto">
+    <div class="col-md-12 mx-auto">
+        <form class="form-inline" action="/submitdone" method="POST">
+            <div class="form-group mb-2">
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="requirement" class="sr-only">Requirement</label>
+                <input type="text" class="form-control" id="requirement" name="requirement" placeholder="Your Requirement">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="agree" class="form-check-input">I agree with Terms</label>
+                <input class="form-check-input" type="checkbox" id="agreeCheck" name="agreeCheck">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 mr-5">Submit</button>
+            <a href="/viewprevious" class="btn btn-danger mb-2">View Previous Items</a>
+        </form>
+    </div>
+</div>
+
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2023 EGO Company. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
