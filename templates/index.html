@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Egotech Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .jumbotron {
+            margin-top: 2rem;
+        }
+        
+        .company-name {
+            color: #007bff;
+        }
+        
+        .description {
+            color: #343a40;
+        }
+        
+        /* Footer Styles */
+        .footer {
+          background-color: #000000;
+          color: #ffffff;
+          margin-top: 5px;
+          padding: 10px 0;
+          text-align: center;
+          position: relative;
+          bottom: 0;
+          width: 100%;
+          line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">IT Solution Provider</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/suranjithprasad">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://suranjithprasad.github.io">Developer Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/@SuranjithPrasad/">YouTube</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/suranjith-prasad-44a128ba">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="display-4">Welcome to <span class="company-name">EGO TECH</span></h1>
+                        <p class="lead description">EGO TECH is a leading provider of web and software development solutions. We deliver high-quality products tailored to meet our clients' unique requirements. <b>We do WEB, Software, Mobile, Python applications</b></p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{{ url_for('static', filename='home.png') }}" class="img-fluid" alt="Responsive Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mx-auto">
+            <div class="col-md-12 mx-auto">
+                <h4><b>Tell us about your requirements</b> - Website | Web application | Mobile application | Software</h4>
+                <br/>
+            </div>
+        </div>
+
+        <div class="row mx-auto">
+            <div class="col-md-12 mx-auto">
+                <form class="form-inline" action="/submitdone" method="POST">
+                    <div class="form-group mb-2">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="requirement" class="sr-only">Requirement</label>
+                        <input type="text" class="form-control" id="requirement" name="requirement" placeholder="Your Requirement">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="agree" class="form-check-input">I agree with Terms</label>
+                        <input class="form-check-input" type="checkbox" id="agreeCheck" name="agreeCheck">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2 mr-5">Submit</button>
+                    <a href="/viewprevious" class="btn btn-danger mb-2">View Previous Items</a>
+                </form>
+                <br/>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <p>All Rights are Recevied Egotech</p>
+                <p>Quick Contact - +94778543475</p>
+                <p>Whatsapp</p>
+            </div>
+            <div class="col-lg-4">
+                <p>suranjithprasad@gmail.com</p>
+                <p>blender3detutotial.blogspot.com</p>
+                <p>Create Account</p>
+            </div>
+            <div class="col-lg-4">
+                <p>&copy; </p>
+                <p>Postal 71500</p>
+                <p>Sri Lanka</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
