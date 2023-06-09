@@ -33,4 +33,3 @@ psycopg2-binary==2.9.6
 SQLAlchemy==2.0.15
 typing_extensions==4.6.3
 Werkzeug==2.3.4
->>>>>>> 230b274459de85cb813a0696f2c26ab38768a098
