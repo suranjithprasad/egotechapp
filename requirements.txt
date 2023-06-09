@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 alembic==1.11.1
 blinker==1.6.2
 click==8.1.3
@@ -16,7 +15,6 @@ psycopg2-binary==2.9.6
 SQLAlchemy==2.0.15
 typing_extensions==4.6.3
 Werkzeug==2.3.4
-=======
 alembic==1.11.1
 blinker==1.6.2
 click==8.1.3
@@ -34,4 +32,4 @@ psycopg2-binary==2.9.6
 SQLAlchemy==2.0.15
 typing_extensions==4.6.3
 Werkzeug==2.3.4
->>>>>>> 230b274459de85cb813a0696f2c26ab38768a098
+
